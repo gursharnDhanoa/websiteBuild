@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        Phite Shop
+        </title>
+
+            <meta charset="UTF-8">
+            <meta name="description" content="The best place to shop for Boxing and MMA clothing and gear. We specialize in the best gear and most fashionable items. T-shirts, Hoodies, Gloves, Wraps">
+            <meta name="keyword" content="MMA, UFC, Boxing, Floyd, Mayweather, Conor, McGregor, Clothing, Fashion, Gear, Best, Mixed Martial Arts, Joe, Rogan, Joey, Diaz, Ronda, Rousey, Manny, Pacquiao, Anthony, Joshua, Deontay, Wilder, Mike, Tyson, Adrien Broner, GGG, Canelo, Andre, Ward, ">
+            <meta name="author" content="Phite Shop">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet"
+            type="text/css"
+            href="stylesheet.css" />
+        
+        </head>
+
+        <body>
+            <div id="container">
+            <div id="header">
+                <img class="mainLogo" src="logo/mainLogoImg.png"/>
+            </div>
+            <div id="hero">
+                <img class="heroClass" src="images/hero/GGG.jpg"/>
+                <img class="heroClass" src="images/hero/andreWard.jpg"/>
+                <img class="heroClass" src="images/hero/mike tyson.jpg"/>
+
+                <script>
+                    var slideIndex = 0;
+                    carousel();
+
+                    function carousel(){
+                        var i;
+                        var x = document.getElementsByClassName("heroClass");
+                        for (i = 0; i <x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        slideIndex++;
+                        if (slideIndex > x.length) {slideIndex = 1}
+                        x[slideIndex-1].style.display = "block";
+                        setTimeout(carousel, 4000);
+                    }
+                </script>
+            </div>
+
+            </div>
+        </body> 

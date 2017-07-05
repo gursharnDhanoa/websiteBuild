@@ -1,0 +1,16 @@
+#logo {
+    width: 50%;
+    height: 50%;
+    padding-left: 50px;
+
+}
+
+.navbar-brand {
+    background: url(logo/mainLogoImg.png) center / contain no-repeat;
+    height: 50%;
+    width: 50%;
+    transform: translateX(-50%);
+    -o-object-fit: contain;
+    object-fit: contain;
+
+}
